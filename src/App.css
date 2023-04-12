@@ -4,3 +4,9 @@ header {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}

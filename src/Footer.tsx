@@ -1,12 +1,13 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <p>Hello</p>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-facebook"></i>
-      </a>
+        <a href="https://www.facebook.com/KelvinMcMillanArt">
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
     </footer>
   );
 };

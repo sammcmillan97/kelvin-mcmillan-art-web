@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <p id="artist-info">Artist, Canterbury New Zealand</p>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li><a href="#">Originals</a></li>
             <li><a href="#">Giclee Prints</a></li>
             <li><a href='/about'>About</a></li>
