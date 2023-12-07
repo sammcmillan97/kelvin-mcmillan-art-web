@@ -5,7 +5,7 @@ import "./Header.css";
 const Header: React.FC = () => {
     return (
       <div className="header-content">
-        <h1>Kelvin McMillan Art</h1>
+        <h1 id="title">Kelvin McMillan Art</h1>
         <p id="artist-info">Artist, Canterbury New Zealand</p>
         <nav>
           <ul>

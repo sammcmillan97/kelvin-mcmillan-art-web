@@ -18,7 +18,7 @@
   }
   
   nav li {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   
   nav a {
@@ -33,7 +33,10 @@
     justify-content: center;
     align-items: center;
     font-style: italic;
-    font-size: 0.8rem;
-    margin-top: 5px;
+    /* font-size: 0.8rem; */
     color: #666;
+  }
+
+  #title {
+    
   }
