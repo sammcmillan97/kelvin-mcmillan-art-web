@@ -12,7 +12,7 @@ function App() {
       <header>
         <Header />
       </header>
-        <div>
+        <div className="pageContent">
           <Routes>
               <Route path="/about" element={<About/>}/>
               <Route path="/home" element={<Home/>}/>
