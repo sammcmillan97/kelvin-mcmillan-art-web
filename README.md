@@ -19,11 +19,9 @@ To run this application locally, you'll need to have Node.js installed on your s
 
     ```sh
     git clone git@github.com:sammcmillan97/kelvin-mcmillan-art-web.git
-
 2. **Install the deepencies**
     ```sh
     pnpm install
-
 3. **Run the application**
     ```sh
     pnpm vite dev    
