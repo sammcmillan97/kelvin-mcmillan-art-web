@@ -1,8 +1,29 @@
-import React from "react";
-
-interface MyStoryProps {}
+import React, { useState, useEffect } from "react";
 
 const About: React.FC = () => {
+
+  const [data, setData] = useState({ angusBirth: 0, samBirth: 0});
+
+  useEffect(() => {
+    
+    const calculatedAngusBirth = calculateAge(new Date(1994, 11, 4))
+    const calculatedSamBirth = calculateAge(new Date(1997, 11, 4))
+
+    setData({angusBirth : calculatedAngusBirth, samBirth: calculatedSamBirth})
+  }, []);
+
+  function calculateAge(birthDate: Date): number {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
+}
+
   return (
     <div>
       <h2>My Story</h2>
@@ -29,8 +50,8 @@ const About: React.FC = () => {
         solo exhibitions.
       </p>
       <p>
-        I married my wife Sally in 1992 and we have two boys: Angus (25) and Sam
-        (22).
+        I married my wife Sally in 1992 and we have two boys: Angus ({data.angusBirth}) and Sam
+        ({data.samBirth}).
       </p>
     </div>
   );

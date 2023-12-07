@@ -8,10 +8,10 @@ import Home from './components/Home/Home';
 function App() {
   return (
     <div>
+      <Router>
       <header>
         <Header />
       </header>
-      <Router>
         <div>
           <Routes>
               <Route path="/about" element={<About/>}/>
