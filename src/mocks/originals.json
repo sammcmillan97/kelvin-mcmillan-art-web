@@ -1,5 +1,13 @@
 [
-    {"Title": "Fresh Snow, Lindis Pass", "Type": "LandScape",  "imagePath": "Fresh+Snow+Lindis+Pass+Acry+1520+760.jpg"},
-    {"Title": "Morning Light, Glendu Bay", "Type": "LandScape", "imagePath": "Morning+Light+Glendhu+Bay+wc+1999x400+4500+Exh+Aspiring+Art+.jpg"},
-    {"Title": "Aylesbury Crossing", "Type": "LandScape", "imagePath": "Aylesbury+Crossing+wc+760x560+sold.jpg"}
+    {"id" : 1, "title": "Fresh Snow, Lindis Pass", "type": "LandScape", "dimensions" : 
+    "750x780mm", "avaliable" : true,  "giclee" : true,   
+    "imageUrl": "Fresh+Snow+Lindis+Pass+Acry+1520+760.jpg", "price" : "$7800"},
+
+    {"id" : 2, "title": "Morning Light, Glendu Bay", "type": "LandScape",  "dimensions" : 
+    "750x780mm",  "avaliable" : true,  "giclee" : true,  
+    "imageUrl": "Morning+Light+Glendhu+Bay+wc+1999x400+4500+Exh+Aspiring+Art+.jpg", "price" : "$680"},
+
+    {"id" : 3, "title": "Aylesbury Crossing", "type": "LandScape", "dimensions" : 
+    "750x780mm",  "avaliable" : true,  "giclee" : true,  
+    "imageUrl": "Aylesbury+Crossing+wc+760x560+sold.jpg", "price" : "$680"}
 ]

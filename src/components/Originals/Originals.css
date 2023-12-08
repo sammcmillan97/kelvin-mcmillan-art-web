@@ -1,0 +1,17 @@
+.orginals-list {
+    list-style-type: none;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.originals-list-item {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.orginals-image {
+    width : 80%;
+}

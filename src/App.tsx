@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
+import Originals from './components/Originals/Originals';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       </header>
         <div className="pageContent">
           <Routes>
-              <Route path="/about" element={<About/>}/>
               <Route path="/home" element={<Home/>}/>
+              <Route path="/originals" element={<Originals/>}/>
+              <Route path="/about" element={<About/>}/>
           </Routes>
         </div>
       </Router>
