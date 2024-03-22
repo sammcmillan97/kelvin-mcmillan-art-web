@@ -1,0 +1,9 @@
+[
+    {"id" : 1, "title": "Fresh Snow, Lindis Pass", "type": "LandScape", 
+    "description" : "As I crafted Fresh Snow at Lindis Pass, I was inspired by the serene and untouched beauty of New Zealand's winter landscape. In this painting, I sought to capture the essence of Lindis Pass under a blanket of pristine snow. The early morning light, softly illuminating the hills, brings a tranquil glow that contrasts with the distant, shadowed mountains. My aim was to convey not just the visual splendor but also the sense of peace and solitude that a fresh snowfall can bring to such a majestic and untouched environment." ,
+     "dimensions" : 
+    "750x780mm",  "giclee" : true,   
+    "imageUrl": "Fresh+Snow+Lindis+Pass+Acry+1520+760.jpg", "price" : "$7800", "link" : "https://www.google.com", 
+    "Gallery" : {"title" : "Eade Gallery", "location" : "Central Otago, New Zealand", "link" : "https://www.eadegallery.co.nz/"}
+    }
+]

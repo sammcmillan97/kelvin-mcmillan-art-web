@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Originals from './components/Originals/Originals';
+import Original from './components/Original/Original';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       </header>
         <div className="pageContent">
           <Routes>
-              <Route path="/home" element={<Home/>}/>
-              <Route path="/originals" element={<Originals/>}/>
-              <Route path="/about" element={<About/>}/>
+              <Route path="/Home" element={<Home/>}/>
+              <Route path="/Originals" element={<Originals/>}/>
+              <Route path="/Originals/:id" element={<Original/>}/>
+              <Route path="/About" element={<About/>}/>   
           </Routes>
         </div>
       </Router>

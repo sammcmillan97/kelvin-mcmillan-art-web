@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { Orginals } from "../../types/orginals";
 import orginalsData from '../../mocks/originals.json';
 import "./Originals.css";
+import { NavLink } from "react-router-dom";
 
-const Home: React.FC = () => {
+const Originals: React.FC = () => {
     const [orginals, setOrginals] = React.useState<Orginals[]>([]);
 
     useEffect(() => {
@@ -17,14 +18,18 @@ const Home: React.FC = () => {
       <div>
         <ul className="orginals-list">
             {orginals.map((orginal: Orginals) => (
-              <li className="originals-list-item" key={orginal.id}>
-                <img className="orginals-image" src={"./src/mocks/images/" + orginal.imageUrl} alt={orginal.title} />
-                <div><p>{orginal.title}</p> <p>{orginal.dimensions}</p></div>
-              </li>     
+              <li key={orginal.id}>
+                <div className="originals-list-item">
+                  <NavLink className="originals-image-link" to={`/Originals/${orginal.id}`}>
+                    <img className="orginals-image" src={"./src/mocks/images/" + orginal.imageUrl} alt={orginal.title} />
+                    </NavLink>
+                    <div><p>{orginal.title}</p></div>
+                </div>
+              </li> 
              ))}
         </ul>    
       </div>
     );
   }
   
-  export default Home;
+  export default Originals;

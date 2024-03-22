@@ -3,14 +3,23 @@ import { NavLink } from 'react-router-dom';
 import "./Header.css";
 
 const Header: React.FC = () => {
+
+  const [showMenu, setShowMenu] = useState(false);
+
     return (
       <div className="header-content">
-        <h1 id="title">Kelvin McMillan Art</h1>
+        <h1 id="title">KELVIN MCMILLAN</h1>
         <p id="artist-info">Artist, Canterbury New Zealand</p>
+        <div>
         <nav>
-          <ul>
+          <div className="menu" onClick={() => setShowMenu(!showMenu)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul className={showMenu ? "open" : "close"}>
             <li>
-              <NavLink to="/home" 
+              <NavLink to="/Home" 
                   className={({ isActive }) => isActive ? 'active' : ''}>
                   Home
               </NavLink>
@@ -28,6 +37,12 @@ const Header: React.FC = () => {
               </NavLink>
             </li>
             <li>
+            <NavLink to="/Portfolio" 
+                  className={({ isActive }) => isActive ? 'active' : ''}>
+                  Portfolio
+              </NavLink>
+            </li>
+            <li>
             <NavLink to="/About" 
                   className={({ isActive }) => isActive ? 'active' : ''}>
                   About
@@ -41,6 +56,7 @@ const Header: React.FC = () => {
             </li>
           </ul>
         </nav>
+        </div>
       </div>
     );
   }

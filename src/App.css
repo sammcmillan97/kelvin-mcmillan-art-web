@@ -3,16 +3,14 @@ header {
 }
 
 .pageContent {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 2%;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  height: '100vh'
 }
 
 footer {
+  margin-top: 10%;
   position: fixed;
   bottom: 0;
 }
