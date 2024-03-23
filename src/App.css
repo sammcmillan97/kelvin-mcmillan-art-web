@@ -2,7 +2,7 @@ header {
     padding: 1rem;
 }
 
-.pageContent {
+.page-content {
 
   display: flex;
   align-items: center;
@@ -11,6 +11,10 @@ header {
 
 footer {
   margin-top: 10%;
-  position: fixed;
-  bottom: 0;
+}
+
+@media (min-width: 1000px) {
+  .content {
+    width: 60%;
+  }
 }

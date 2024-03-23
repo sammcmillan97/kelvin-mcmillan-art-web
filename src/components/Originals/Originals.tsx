@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { Orginals } from "../../types/orginals";
+import { originals } from "../../types/originals";
 import orginalsData from '../../mocks/originals.json';
 import "./Originals.css";
 import { NavLink } from "react-router-dom";
 
 const Originals: React.FC = () => {
-    const [orginals, setOrginals] = React.useState<Orginals[]>([]);
+    const [orginals, setOrginals] = React.useState<originals[]>([]);
 
     useEffect(() => {
       //simulate api call
@@ -17,11 +17,11 @@ const Originals: React.FC = () => {
     return (
       <div>
         <ul className="orginals-list">
-            {orginals.map((orginal: Orginals) => (
+            {orginals.map((orginal: originals) => (
               <li key={orginal.id}>
                 <div className="originals-list-item">
                   <NavLink className="originals-image-link" to={`/Originals/${orginal.id}`}>
-                    <img className="orginals-image" src={"./src/mocks/images/" + orginal.imageUrl} alt={orginal.title} />
+                    <img className="orginals-image" src={"./src/mocks/images/" + orginal.id + ".jpg"} alt={orginal.title} />
                     </NavLink>
                     <div><p>{orginal.title}</p></div>
                 </div>

@@ -14,13 +14,15 @@ function App() {
       <header>
         <Header />
       </header>
-        <div className="pageContent">
-          <Routes>
-              <Route path="/Home" element={<Home/>}/>
-              <Route path="/Originals" element={<Originals/>}/>
-              <Route path="/Originals/:id" element={<Original/>}/>
-              <Route path="/About" element={<About/>}/>   
-          </Routes>
+        <div className="page-content">
+          <div className="content">
+            <Routes>
+                <Route path="/Home" element={<Home/>}/>
+                <Route path="/Originals" element={<Originals/>}/>
+                <Route path="/Originals/:id" element={<Original/>}/>
+                <Route path="/About" element={<About/>}/>   
+            </Routes>
+          </div>
         </div>
       </Router>
       <footer>

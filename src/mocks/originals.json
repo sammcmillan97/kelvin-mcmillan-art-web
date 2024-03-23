@@ -1,10 +1,7 @@
 [
-    {"id" : 1, "title": "Fresh Snow, Lindis Pass", 
-    "imageUrl": "Fresh+Snow+Lindis+Pass+Acry+1520+760.jpg"},
+    {"id" : 1, "title": "Fresh Snow, Lindis Pass"},
 
-    {"id" : 2, "title": "Morning Light, Glendu Bay",
-    "imageUrl": "Morning+Light+Glendhu+Bay+wc+1999x400+4500+Exh+Aspiring+Art+.jpg"},
+    {"id" : 2, "title": "Morning Light, Glendu Bay"},
 
-    {"id" : 3, "title": "Aylesbury Crossing",
-    "imageUrl": "Aylesbury+Crossing+wc+760x560+sold.jpg"}
+    {"id" : 3, "title": "Aylesbury Crossing"}
 ]
