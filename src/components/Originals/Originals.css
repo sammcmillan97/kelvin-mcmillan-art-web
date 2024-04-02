@@ -1,3 +1,13 @@
+.oringals-title {
+    text-align: center;
+}
+
+.originals-cotent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .orginals-list {
     list-style-type: none;
     display : flex;

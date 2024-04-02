@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 
     return (
       <div className="header-content">
-        <h1 id="title">KELVIN MCMILLAN</h1>
+        <h1 id="title">KELVIN MCMILLAN ART</h1>
         <p id="artist-info">Artist, Canterbury New Zealand</p>
         <div>
         <nav>

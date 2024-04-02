@@ -1,0 +1,32 @@
+.about-photo-main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text-div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.about-photo-div {
+    text-align: center;
+    width: 45%;
+}
+
+.about-photo-div-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.about-photo {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .about-photo-div {
+        width: 80%;
+    }
+    
+}

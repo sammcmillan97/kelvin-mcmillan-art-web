@@ -15,7 +15,8 @@ const Originals: React.FC = () => {
     }, []);
 
     return (
-      <div>
+      <div className="originals-cotent">
+        <h3 className="oringals-title">All works below are currently available for purchase.</h3>
         <ul className="orginals-list">
             {orginals.map((orginal: originals) => (
               <li key={orginal.id}>
