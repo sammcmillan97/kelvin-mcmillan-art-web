@@ -1,14 +1,11 @@
 export interface original {
     id : number,
     title : string,
-    location: string,
-    description : string,
+    type : string,
     dimensions : string,
     giclee : boolean,
     price : string,
-    framed : boolean,
-    type : string,
-    sold : boolean
+    info : string,
     galleryLink : string,
     galleryName: string
 }

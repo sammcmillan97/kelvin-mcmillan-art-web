@@ -1,29 +1,39 @@
 import React, { useEffect } from "react";
+import { useParams, Link } from 'react-router-dom';
 import { original} from "../../types/original";
 import "./Original.css";
-import originalData  from '../../mocks/original.json';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 const Original: React.FC = () => {
-  const [orginal, setOrginal] = React.useState<original>();
+
+  let { id } = useParams<{ id: string }>();
+  const [original, setOrginal] = React.useState<original>({} as original);
 
     useEffect(() => {
-      //simulate api call
-      setTimeout(() => {
-        setOrginal(originalData);
-      }, 500);
+      axios.get('http://localhost:8000/paintings/originals/' + id).then((response) => {
+        setOrginal(response.data);
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.error(`Error fetching data: ${error}`);
+      });
     }, []);
+
     return (
       <div className="orignal-content">   
-        {/* <button className="back-button" onClick={() => history.back()}> <FontAwesomeIcon icon={faArrowLeftLong} /></button> */}
         <div className="original-container">
-            <img className="orginal-image" src={"/src/mocks/images/" + originalData.id + ".jpg"} alt={originalData.title} />
-            <h2>{originalData.title}, {originalData.location}</h2>
-            <p>{originalData.description}</p>
-            <span> </span>
-            <p>{originalData.type} - {originalData.price} - {originalData.dimensions}</p> 
-            <p>Avaliable at <a href={originalData.galleryLink}>{originalData.galleryName}</a></p>
+          <div className="original-image-container">
+            <img className="orginal-image" src={"/src/mocks/images/" + original.title + ".jpg"} alt={original.title} />
+          </div>
+          <h2>{original.title}</h2>
+          <p>{original.info}</p>
+
+          <p>{original.type} - ${original.price} - {original.dimensions}</p>
+          {original.galleryLink ? (
+            <p>Available at <Link to={`http://${original.galleryLink}`} target="_blank" rel="noopener noreferrer">{original.galleryName}</Link></p>
+          ) : (
+            <br/>
+          )}
         </div>
       </div>
     );
