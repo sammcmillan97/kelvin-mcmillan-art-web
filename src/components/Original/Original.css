@@ -16,3 +16,7 @@
 .orginal-image:hover {
     transform: scale(1.2);
   }
+
+a {
+    color: #000;
+}

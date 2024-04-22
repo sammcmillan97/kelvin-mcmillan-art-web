@@ -1,5 +1,6 @@
 :root {
-  font-family: Questrial, sans-serif;
+
+  font-family: Europa;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -11,10 +12,19 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+  font-family: 'Europa';
+  src: url('./fonts/CabinetGrotesk-Regular.woff2') format('woff2'), /* Change the path accordingly */
+}
+
 body {
   margin: 0;
   padding: 0;
-} 
+}
+
+p {
+  color: #a1a1a1;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
