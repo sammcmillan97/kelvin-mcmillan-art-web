@@ -1,0 +1,20 @@
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.contact-social-icon {
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    margin: 0.5rem;
+}
+
+.contact-social-icon:hover {
+    color: #838383;
+}
+
+.contact-div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

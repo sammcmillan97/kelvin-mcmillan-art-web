@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Originals from './components/Originals/Originals';
 import Original from './components/Original/Original';
 import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
                 <Route path="/Originals" element={<Originals/>}/>
                 <Route path="/Originals/:id" element={<Original/>}/>
                 <Route path="/Portfolio" element={<Portfolio/>}/>
-                <Route path="/About" element={<About/>}/>   
+                <Route path="/About" element={<About/>}/>
+                <Route path="/Contact" element={<Contact/>}/>  
             </Routes>
           </div>
         </div>
